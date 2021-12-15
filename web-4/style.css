@@ -36,7 +36,7 @@ body{
     display: flex;
 }
 #head .menu li{
-    padding:10px
+    padding:10px;
 }
 #head .menu ul li a{
     text-decoration: none;
@@ -140,8 +140,8 @@ body{
         font-size: 0.9em;
     }
     #showcase{
+        max-height: 400px;
         padding:10px;
-        max-height: 380px;
     }
     #showcase h1{
         font-size: 2.1em;
@@ -158,6 +158,11 @@ body{
     #about .about-a,#about .about-b{
         margin: 0;
         padding:5px;
+    }
+    #about .about-a p{
+        margin: 5px;
+        padding: 5px;
+       
     }
     #about .about-a h2{
        
