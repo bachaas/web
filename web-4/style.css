@@ -42,6 +42,7 @@ body{
     text-decoration: none;
     color: #70dd90;
     font-weight: 700;
+    letter-spacing: 0.5px;
 }
 #head .menu ul li a:hover{
     color: #000000;
@@ -140,6 +141,7 @@ body{
     }
     #showcase{
         padding:10px;
+        max-height: 380px;
     }
     #showcase h1{
         font-size: 2.1em;
@@ -166,7 +168,7 @@ body{
     }
     #about .about-a p{
         line-height: 1.4;
-        font-size: 15px;
+        font-size: 16px;
         letter-spacing: 0.7px;
         /* text-align: center; */
         
