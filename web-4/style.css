@@ -121,8 +121,41 @@ body{
     height: calc(6 * 91px);
     border-radius: 10px;
 }
+/* Serivces */
+
+#rooms{
+    background-color:rgb(245, 240, 240);
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+#rooms h2{
+    font-family: 'Roboto slab', serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px #e6e2e2;
+    padding: 20px;
+    margin: 5px;
+    color: #232523;
+}
+#rooms .pics{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:5px;
+}
+#rooms .pics img{
+    display:block;
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+    flex:1;
+}
 
 
+/* Contact */
 
 /* Responsive design */
 @media(max-width:800px){
@@ -177,5 +210,19 @@ body{
         letter-spacing: 0.7px;
         /* text-align: center; */
         
+    }
+    #rooms .pics{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;          
+    }
+    #rooms .pics img{
+        width: 80%;
+        height: 80%;
+    }
+    #rooms .pics p{
+        font-weight: bolder;
+        color: rgb(66, 63, 63);
     }
 }
