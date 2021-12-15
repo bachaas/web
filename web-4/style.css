@@ -225,4 +225,7 @@ body{
         font-weight: bolder;
         color: rgb(66, 63, 63);
     }
+    #rooms h2{
+        font-size:30px;
+    }
 }
