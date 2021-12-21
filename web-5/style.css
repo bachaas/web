@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Titillium+Web&display=swap');
+
+/* 
+font-family: 'Lily Script One', cursive;
+font-family: 'Titillium Web', sans-serif;
+ */
+
+/* Mobile First Design */
+
+
+:root{
+    --black-color: #000;
+    --bg-color:#bbe1ee;
+    --white: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border:1px solid orange; */
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%; /* 62.5% of 16px is 10px*/
+    background-color: var(--bg-color);
+    color: var(--black-color);
+}
+
+.landing{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.image .ae{
+
+    /* 1439 x 1719 */
+    max-width: 80%;
+    max-height: 90%;
+    /* margin: 0 auto; */
+    transform: rotate(-20deg);
+}
+
+.title{
+    display:flex;
+    flex-direction: column;
+    margin-top: 1.2em;
+    transform: rotate(-15deg);
+    text-align: center;
+}
+.title h1{
+    font-size: 3.7em;
+    font-family: 'Lily Script One', cursive;
+    margin: 10px 0 0 0;
+    color:rgb(27, 26, 26);
+}
+
+.title p{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+.about{
+    background-color: var(--white);
+    padding: 15px;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+.about p{
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 1.2em;
+}
