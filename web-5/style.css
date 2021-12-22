@@ -5,6 +5,8 @@ font-family: 'Lily Script One', cursive;
 font-family: 'Titillium Web', sans-serif;
  */
 
+
+
 /* Mobile First Design */
 
 
@@ -27,62 +29,116 @@ body{
     color: var(--black-color);
 }
 
-.landing{
-    display:flex;
+/* Showcase */
+
+.showcase{
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+    padding:5px;
 }
-
-.image{
+.logo, .title{
     display:flex;
     justify-content: center;
-    align-items: center;
 }
-.image .ae{
-
-    /* 1439 x 1719 */
-    max-width: 80%;
-    max-height: 90%;
-    /* margin: 0 auto; */
-    transform: rotate(-20deg);
+/* Image */
+.logo img{
+    width:250px;
+    height: 320px;
+    transform: rotate(-12deg);
 }
 
 .title{
-    display:flex;
-    flex-direction: column;
-    margin-top: 1.2em;
-    transform: rotate(-15deg);
     text-align: center;
+    margin: 20px 0 0 0;
 }
+/* Text properties */
 .title h1{
-    font-size: 3.7em;
     font-family: 'Lily Script One', cursive;
-    margin: 10px 0 0 0;
-    color:rgb(27, 26, 26);
+    font-size: 3.8em;
+    transform: rotate(-12deg);
+    color:#1b1a1a;
+    text-shadow: 1px 1px rgb(66, 65, 65);
 }
-
 .title p{
-    font-size: 2em;
-    font-weight: bold;
-    color: rgb(32, 32, 32);
+    font-size: 1.9em;
+    font-weight: bolder;
+    transform: rotate(-12deg);
+    color:#202020;
+    text-shadow: 1px 1px rgb(214, 210, 210);
 }
 
-.about{
+
+/* About & Contributions*/
+
+.about, .contributions,.quotes{
+    margin: 30px 5px;
     background-color: var(--white);
-    padding: 15px;
-    font-size: 1.7em;
-    font-weight: 600;
-    text-align: center;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: rgba(63, 62, 62, 0.2) 0px 7px 29px 0px;
+}
+.about h2,.contributions h2, .quotes h2{
+    font-size: 2.8em;
+    text-align:center;
+    margin: 8px 0;
+    font-weight: bold;
 }
 
 .about p{
-    margin: 5px 0;
-    font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.8em;
+}
+
+.contributions ol{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.contributions li{
+    padding: 5px;
+}
+.contributions ol a{
+    font-size: 1.9em;
+    color: #1b1a1a;
+}
+.contributions ol a:hover{
+    color: blue;
+}
+
+.quotes p{
+    font-size: 1.8em;
+    text-align: center;
+    margin: 10px 0;
+}
+.read_more{
+    text-decoration: none;
+    font-size: 1.6em;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display:inline-block;
+    width: auto;
+    margin: 10px 0 0 0;
+    color: black;
+    background-color: #cee5ec;
+    font-weight: bolder;
+}
+.read_more:hover{
+    color: blue;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.8em;
+    margin: 10px;
+    font-weight: bold;
+}
+
+hr{
+    color: #f1f1f1;
 }
